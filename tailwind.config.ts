@@ -11,9 +11,23 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-      },
+      }, 
+      utilities: {
+        '.scrollbar-hide': {
+          /* IE and Edge */
+          '-ms-overflow-style': 'none',
+  
+          /* Firefox */
+          'scrollbar-width': 'none',
+  
+          /* Safari and Chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none'
+          },
+        },
     },
   },
   plugins: [],
-};
+},
+}
 export default config;
